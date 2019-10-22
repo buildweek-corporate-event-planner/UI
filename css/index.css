@@ -3,6 +3,7 @@
 }
 html {
   font-size: 62.5%;
+  color: #323336;
 }
 @font-face {
   font-family: 'Fira Sans';
@@ -19,7 +20,7 @@ html {
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 .container {
-  max-width: 1600px;
+  max-width: 1400px;
   width: 100%;
   padding: 2% 5%;
   margin: 0 auto;
@@ -56,11 +57,84 @@ nav .btn-two {
 h1 {
   font-size: 3.6rem;
   text-align: center;
+  padding-top: 5vh;
 }
 .intro {
   display: flex;
   width: 100%;
+  margin: 0 2vw;
 }
-.intro-img {
-  width: 30%;
+.intro-list {
+  width: 20%;
+}
+.intro-list ul {
+  margin: 8vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.intro-list li {
+  margin: 2vh 0;
+  font-size: 2.2rem;
+}
+.cta-box {
+  background-color: #F5F6F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+.cta-box h3 {
+  justify-content: center;
+  font-size: 2.4rem;
+  padding: 0.25% 0;
+  margin: 0.75vh 0 1.5vh 0;
+}
+.cta-box .cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cta-box .cta form {
+  flex-direction: row;
+  justify-content: center;
+  width: 35%;
+}
+.cta-box .cta form input {
+  width: 50%;
+  padding: 1.5%;
+  border: none;
+}
+.cta-box .cta button {
+  background-color: #F29429;
+  color: #F5F6F7;
+  padding: 0.75vh 0.5vw;
+  margin: 1%;
+  width: 45%;
+  height: 70%;
+  border-radius: 16px;
+  border: none;
+  font-size: 1.5rem;
+}
+.cta-about {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 5vh 0;
+}
+.features-text {
+  text-align: center;
+  padding-top: 3vh;
+  font-size: 1.8rem;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features .title {
+  width: 100%;
+}
+.features .box {
+  width: 45%;
 }
