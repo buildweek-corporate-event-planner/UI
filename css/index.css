@@ -125,7 +125,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 55% 0;
+    margin: 25% 0;
     height: 40vh;
   }
   .intro .intro-img {
@@ -199,7 +199,7 @@ h1 {
 }
 @media (max-width: 500px) {
   .cta-box {
-    margin-top: 3vh;
+    margin-top: 15vh;
     height: 30vh;
   }
 }
