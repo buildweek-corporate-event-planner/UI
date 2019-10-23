@@ -33,7 +33,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 25% 0;
+        margin: 25% 0 0 0;
         height: 40vh;
 
         .intro-img {
@@ -78,8 +78,11 @@ h1 {
         }
 
         @media @phone {
-            align-items: center;
-            height: 20vh;
+            // align-items: center;
+            height: 22vh;
+            margin: 0.5vh 0;
+            flex-wrap: wrap;
+            padding-left: 15vw;
         }
     }
 
@@ -93,12 +96,12 @@ h1 {
         }
 
         @media @phone {
-            font-size: 1rem;  
+            font-size: 1.2rem;  
         }
     }
 }
 
-.cta-box {
+.cta-box1 {
     background-color: @bg;
     display: flex;
     flex-direction: column;
@@ -175,7 +178,8 @@ h1 {
                 }
 
                 @media @phone {
-                    width: 70%;
+                    width: 68%;
+                    margin-left: 5vw;
                 }
             }
         }
@@ -216,6 +220,10 @@ h1 {
     @media @tablet {
         font-size: 1.4rem; 
     }
+
+    @media @phone {
+        font-size: 1.4rem;
+    }
 }
 
 .features-text {
@@ -235,6 +243,8 @@ h1 {
 
     @media @phone {
         font-size: 1.2rem;
+        padding-top: 0;
+        margin-top: 7vh;
     }
 }
 
@@ -262,6 +272,7 @@ h1 {
 
         @media @phone {
             font-size: 1.3rem;
+            padding-bottom: 0;
         }
     }
 
@@ -285,11 +296,51 @@ h1 {
 
         @media @phone {
             width: 100%;
+            padding-bottom: 10vh;
         }
     }
 
     img {
         width: 90%;
+    }
+}
+
+.cta-box2 {
+    background-color: @bg;
+    display: flex;
+
+        @media @phone {
+            height: 15vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10vh;
+        }
+    input {
+        @media @phone {
+            padding: 2% 0;
+            border:none;
+        }
+    }
+    
+    button {
+        @media @phone {
+            border-radius: 16px;
+            border: none;
+            padding: 2% 0;
+            width: 20vw;
+            color: @bg;
+            background-color: @text;
+        }
+    }
+
+    h3 {
+        @media @phone {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin-bottom: 1vh;
+        }
+
     }
 }
 

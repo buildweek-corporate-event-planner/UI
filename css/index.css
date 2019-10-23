@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-  color: #323336;
-}
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -19,21 +15,39 @@ html {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+html {
+  font-size: 62.5%;
+  color: #323336;
+  font-family: 'Roboto', sans-serif;
+}
 .container {
   max-width: 1400px;
   width: 100%;
   padding: 2% 7% 2% 4%;
   margin: 0 auto;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .container {
     width: 100%;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fira Sans', sans-serif;
+}
 header {
   display: flex;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   header {
     width: 100%;
     justify-content: space-between;
@@ -43,13 +57,13 @@ header {
   padding: 0 0 0 1%;
   width: 50%;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .logo {
     padding: 5% 0 0 5%;
     margin-right: 2vw;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .logo img {
     width: 85%;
   }
@@ -61,7 +75,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   nav {
     width: 40%;
   }
@@ -75,14 +89,16 @@ nav button {
   border: none;
   font-size: 1.25rem;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   nav button {
     width: 30%;
+    font-size: 1rem;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   nav button {
     width: 50%;
+    font-size: 1rem;
   }
 }
 nav .btn-one {
@@ -96,12 +112,12 @@ h1 {
   text-align: center;
   padding-top: 5vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   h1 {
     font-size: 2rem;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   h1 {
     font-size: 1.8rem;
   }
@@ -111,7 +127,7 @@ h1 {
   width: 100%;
   margin: 0 2vw;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .intro .intro-img {
     width: 65%;
   }
@@ -120,12 +136,12 @@ h1 {
     margin: 0 2vw 0 7vw;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 25% 0;
+    margin: 25% 0 0 0;
     height: 40vh;
   }
   .intro .intro-img {
@@ -140,12 +156,12 @@ h1 {
 .intro-list {
   width: 20%;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .intro-list {
     width: 30%;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .intro-list {
     width: 100%;
     justify-content: center;
@@ -156,34 +172,36 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .intro-list ul {
     padding: 0;
     margin-top: 2vh;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .intro-list ul {
-    align-items: center;
-    height: 20vh;
+    height: 22vh;
+    margin: 0.5vh 0;
+    flex-wrap: wrap;
+    padding-left: 15vw;
   }
 }
 .intro-list li {
   margin: 2vh 0;
   font-size: 2.2rem;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .intro-list li {
     font-size: 1.8rem;
     margin: 1vh 0;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .intro-list li {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
-.cta-box {
+.cta-box1 {
   background-color: #F5F6F7;
   display: flex;
   flex-direction: column;
@@ -191,62 +209,62 @@ h1 {
   align-items: center;
   height: 25vh;
 }
-@media (max-width: 1024px) {
-  .cta-box {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-box1 {
     height: 18vh;
     margin-top: 3vh;
   }
 }
-@media (max-width: 500px) {
-  .cta-box {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 {
     margin-top: 15vh;
     height: 30vh;
   }
 }
-.cta-box h3 {
+.cta-box1 h3 {
   justify-content: center;
   font-size: 2.4rem;
   padding: 0.25% 0;
   margin: 0.75vh 0 1.5vh 0;
 }
-@media (max-width: 1024px) {
-  .cta-box h3 {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-box1 h3 {
     font-size: 2rem;
   }
 }
-@media (max-width: 500px) {
-  .cta-box h3 {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 h3 {
     font-size: 2rem;
     text-align: center;
     padding: 0 8vw;
   }
 }
-.cta-box .cta {
+.cta-box1 .cta {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .cta-box .cta {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 .cta {
     justify-content: center;
     margin-left: 4vw;
     width: 80%;
   }
 }
-.cta-box .cta form {
+.cta-box1 .cta form {
   flex-direction: row;
   justify-content: center;
   width: 35%;
 }
-@media (max-width: 1024px) {
-  .cta-box .cta form {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-box1 .cta form {
     width: 70%;
   }
 }
-@media (max-width: 500px) {
-  .cta-box .cta form {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 .cta form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,23 +272,24 @@ h1 {
     margin-left: 11vw;
   }
 }
-.cta-box .cta form input {
+.cta-box1 .cta form input {
   width: 50%;
   padding: 1.5%;
   border: none;
 }
-@media (max-width: 1024px) {
-  .cta-box .cta form input {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-box1 .cta form input {
     width: 45%;
     margin-left: 4vw;
   }
 }
-@media (max-width: 500px) {
-  .cta-box .cta form input {
-    width: 70%;
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 .cta form input {
+    width: 68%;
+    margin-left: 5vw;
   }
 }
-.cta-box .cta button {
+.cta-box1 .cta button {
   background-color: #F29429;
   color: #F5F6F7;
   padding: 0.75vh 0.5vw;
@@ -281,14 +300,14 @@ h1 {
   border: none;
   font-size: 1.5rem;
 }
-@media (max-width: 1024px) {
-  .cta-box .cta button {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-box1 .cta button {
     padding: 0.5vh 0.25vw;
     width: 40%;
   }
 }
-@media (max-width: 500px) {
-  .cta-box .cta button {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box1 .cta button {
     width: 50%;
     margin-left: 9vw;
     padding: 2%;
@@ -300,7 +319,12 @@ h1 {
   font-size: 1.6rem;
   margin: 5vh 0;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .cta-about {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .cta-about {
     font-size: 1.4rem;
   }
@@ -311,7 +335,7 @@ h1 {
   font-size: 1.8rem;
   background-color: #F5F6F7;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .features-text {
     padding: 0.25vh 0;
     margin: 10vh 0 5vh 0;
@@ -320,9 +344,11 @@ h1 {
     margin: 0;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .features-text {
     font-size: 1.2rem;
+    padding-top: 0;
+    margin-top: 7vh;
   }
 }
 .features {
@@ -330,7 +356,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .features {
     margin: 0;
     justify-content: space-around;
@@ -343,22 +369,23 @@ h1 {
   font-size: 2rem;
   padding-bottom: 5vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .features .title {
     font-size: 1.8rem;
     padding-bottom: 3vh;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .features .title {
     font-size: 1.3rem;
+    padding-bottom: 0;
   }
 }
 .features h4 {
   font-size: 1.6rem;
   text-align: center;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .features h4 {
     font-size: 1.4rem;
   }
@@ -370,7 +397,7 @@ h1 {
   width: 45%;
   padding-bottom: 15vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .features .box1,
   .features .box2,
   .features .box3,
@@ -379,16 +406,53 @@ h1 {
     padding-bottom: 5vh;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .features .box1,
   .features .box2,
   .features .box3,
   .features .box4 {
     width: 100%;
+    padding-bottom: 10vh;
   }
 }
 .features img {
   width: 90%;
+}
+.cta-box2 {
+  background-color: #F5F6F7;
+  display: flex;
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box2 {
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box2 input {
+    padding: 2% 0;
+    border: none;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box2 button {
+    border-radius: 16px;
+    border: none;
+    padding: 2% 0;
+    width: 20vw;
+    color: #F5F6F7;
+    background-color: #323336;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .cta-box2 h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 1vh;
+  }
 }
 .contact {
   display: flex;
@@ -397,7 +461,7 @@ h1 {
   align-items: center;
   margin: 5vh 0 8vh 0;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .contact {
     margin-bottom: 3vh;
   }
@@ -410,12 +474,12 @@ h1 {
   margin: 0;
   font-size: 2.4rem;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .contact .contact-text h3 {
     font-size: 2rem;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact .contact-text h3 {
     font-size: 1.6rem;
   }
@@ -424,12 +488,12 @@ h1 {
   font-size: 1.8rem;
   margin: 1vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .contact h5 {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact h5 {
     font-size: 1.2rem;
   }
@@ -443,12 +507,12 @@ h1 {
   width: 45%;
   padding: 2vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .contact-box {
     width: 62%;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact-box {
     width: 85%;
   }
@@ -458,7 +522,7 @@ h1 {
   align-content: center;
   margin-left: 3vw;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact-box form {
     margin-left: 5vw;
   }
@@ -479,12 +543,12 @@ h1 {
   font-size: 1.25rem;
   margin: 0 0 0 21vw;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .contact-box button {
     margin-left: 28vw;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact-box button {
     margin-left: 38vw;
   }
@@ -497,7 +561,7 @@ h1 {
   width: 3%;
   margin: 1%;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .icons img {
     width: 7%;
     margin: 2%;
@@ -510,13 +574,13 @@ h1 {
 .footer h6 {
   font-size: 1.4rem;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .footer h6 {
     font-size: 1.2rem;
     margin: 2vh 0;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .footer h6 {
     font-size: 1rem;
   }
@@ -527,13 +591,13 @@ h1 {
   justify-content: space-around;
   margin-left: 3%;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .team {
     justify-content: space-around;
     margin-left: 4%;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .team {
     margin-left: 15%;
   }
@@ -546,13 +610,13 @@ h1 {
   padding-bottom: 5vh;
   margin-top: 5vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .team .title {
     font-size: 1.8rem;
     padding-bottom: 3vh;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .team .title {
     font-size: 1.3rem;
   }
@@ -562,7 +626,7 @@ h1 {
   text-align: center;
   color: #3CC1FC;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .team h4 {
     font-size: 1.4rem;
   }
@@ -571,7 +635,7 @@ h1 {
   font-size: 1.4rem;
   text-align: center;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .team p {
     margin: 0 0 2vh 0;
   }
@@ -583,7 +647,7 @@ h1 {
   width: 45%;
   padding-bottom: 15vh;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .team .team1,
   .team .team2,
   .team .team3,
@@ -592,7 +656,7 @@ h1 {
     padding-bottom: 5vh;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .team .team1,
   .team .team2,
   .team .team3,
@@ -606,17 +670,17 @@ h1 {
 .team img {
   width: 90%;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .team {
     width: 90%;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact {
     margin-left: 5vw;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .contact h5 {
     font-size: 1rem;
   }
@@ -629,7 +693,7 @@ h1 {
   width: 3%;
   margin: 1%;
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .icons img {
     width: 5%;
     margin: 2%;
@@ -643,13 +707,13 @@ h1 {
 .footer h6 {
   font-size: 1.4rem;
 }
-@media (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .footer h6 {
     font-size: 1.2rem;
     margin: 2vh 0;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .footer h6 {
     font-size: 0.8rem;
   }

@@ -2,12 +2,13 @@
     box-sizing: border-box;
   }
   
+  @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap');
+
   html {
     font-size: 62.5%;
     color: @text;
+    font-family: 'Roboto', sans-serif;
   }
-
-  @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Roboto&display=swap');
 
   .container {
     max-width: 1400px;
@@ -19,5 +20,13 @@
     @media @tablet {
       width: 100%; 
    }
+
+   @media @phone {
+    width: 100%;
+   }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
   }
 
