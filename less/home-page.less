@@ -2,6 +2,14 @@ h1 {
     font-size: 3.6rem;
     text-align: center;
     padding-top: 5vh;
+
+    @media @tablet {
+        font-size: 2rem;
+    }
+
+    @media @phone {
+        font-size: 1.8rem;
+    }
 }
 
 .intro {
@@ -9,24 +17,84 @@ h1 {
     width: 100%;
     margin: 0 2vw;
 
-    img {
-        // width: 75%;
+    @media @tablet {
+
+        .intro-img {
+            width: 65%;
+        }
+
+        img {
+            width: 75%;
+            margin: 0 2vw 0 7vw;
+        }
     }
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 55% 0;
+        height: 40vh;
+
+        .intro-img {
+            margin: 2%;
+            width: 100%;
+        }
+
+        img {
+            margin: 0;
+            width: 100%;
+        }
+    }
+
 }
 
 .intro-list {
     width: 20%;
+
+    @media @tablet {
+        width: 30%;
+    }
+
+    @media @phone {
+        width: 100%;
+        justify-content: center;
+        // margin-bottom: 25vh;
+        // display: flex;
+        // flex-direction: column;
+        
+        
+    }
     
 
     ul {
         margin: 8vh 0 0 0;
         display: flex;
         flex-direction: column;
+
+        @media @tablet {
+            padding: 0;
+            margin-top: 2vh;
+        }
+
+        @media @phone {
+            align-items: center;
+            height: 20vh;
+        }
     }
 
     li {
         margin: 2vh 0;
-        font-size: 2.2rem;  
+        font-size: 2.2rem;
+        
+        @media @tablet {
+            font-size: 1.8rem;
+            margin: 1vh 0;
+        }
+
+        @media @phone {
+            font-size: 1rem;  
+        }
     }
 }
 
@@ -38,11 +106,32 @@ h1 {
     align-items: center;
     height: 25vh;
 
+        @media @tablet {
+            height: 18vh;
+            margin-top: 3vh;
+        }
+
+        @media @phone {
+            // padding: 12%;
+            margin-top: 3vh;
+            height: 30vh;
+        }
+
     h3 {
         justify-content: center;
         font-size: 2.4rem;
         padding: 0.25% 0;
         margin: 0.75vh 0 1.5vh 0; 
+
+        @media @tablet {
+            font-size: 2rem;
+        }
+
+        @media @phone {
+            font-size: 2rem;
+            text-align: center;
+            padding: 0 8vw;
+        }
     }
 
     .cta {
@@ -52,15 +141,42 @@ h1 {
         align-items: center;
         width: 100%;
 
+        @media @phone {
+            justify-content: center;
+            margin-left: 4vw;
+            width: 80%;
+        }
+
         form {
             flex-direction: row;
             justify-content: center;
             width: 35%;
+
+            @media @tablet {
+                width: 70%;
+            }
+
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                margin-left: 11vw;
+            }
             
             input {
                 width: 50%;
                 padding: 1.5%;
                 border: none;
+
+                @media @tablet {
+                    width: 45%;
+                    margin-left: 4vw;
+                }
+
+                @media @phone {
+                    width: 70%;
+                }
             }
         }
 
@@ -76,6 +192,18 @@ h1 {
             border-radius: 16px; 
             border: none;
             font-size: 1.5rem;
+
+            @media @tablet {
+                padding: 0.5vh 0.25vw;
+                width: 40%;
+            }
+
+            @media @phone {
+                width: 50%;
+                margin-left: 9vw;
+                padding: 2%;
+                font-size: 1.25rem;
+            }
         }
     }
 }
@@ -84,12 +212,30 @@ h1 {
     text-align: center;
     font-size: 1.6rem;
     margin: 5vh 0;
+
+    @media @tablet {
+        font-size: 1.4rem; 
+    }
 }
 
 .features-text {
     text-align: center;
     padding-top: 3vh;
     font-size: 1.8rem;
+    background-color: @bg;
+
+    @media @tablet {
+        padding: 0.25vh 0;
+        margin: 10vh 0 5vh 0;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    @media @phone {
+        font-size: 1.2rem;
+    }
 }
 
 .features {
@@ -97,22 +243,49 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
 
+        @media @tablet {
+            margin: 0;
+            justify-content: space-around;
+        }
+
     .title {
         width: 100%;
         text-align: center;
         color: @main;
         font-size: 2rem;
         padding-bottom: 5vh;
+
+        @media @tablet {
+            font-size: 1.8rem;
+            padding-bottom: 3vh;        
+        }
+
+        @media @phone {
+            font-size: 1.3rem;
+        }
     }
 
     h4 {
         font-size: 1.6rem;
         text-align: center;
+
+        @media @tablet {
+            font-size: 1.4rem;
+        }
     }
 
     .box1,.box2,.box3,.box4  {
         width: 45%;
         padding-bottom: 15vh;
+
+        @media @tablet {
+            width: 43%;
+            padding-bottom: 5vh;
+        }
+
+        @media @phone {
+            width: 100%;
+        }
     }
 
     img {
@@ -127,6 +300,10 @@ h1 {
     align-items: center;
     margin: 5vh 0 8vh 0;
 
+    @media @tablet {
+        margin-bottom: 3vh;
+    }
+
     .contact-text {
         color: @secondary;
         background-color: @bg;
@@ -134,12 +311,28 @@ h1 {
         h3 {
             margin: 0;
             font-size: 2.4rem;
+
+            @media @tablet {
+                font-size: 2rem;;
+            }
+
+            @media @phone {
+                font-size: 1.6rem;
+            }
         }
     }
 
     h5 {
         font-size: 1.8rem;
         margin: 1vh;
+
+        @media @tablet {
+            font-size: 1.4rem;
+        }
+
+        @media @phone {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -152,10 +345,22 @@ h1 {
     width: 45%;
     padding: 2vh;
 
+        @media @tablet {
+            width: 62%;
+        }
+
+        @media @phone {
+            width: 85%;
+        }
+
     form {
         justify-content: center;
         align-content: center;
         margin-left: 3vw;
+
+        @media @phone {
+            margin-left: 5vw;
+        }
     }
 
     input {
@@ -175,6 +380,14 @@ h1 {
         color: @bg;
         font-size: 1.25rem;
         margin: 0 0 0 21vw;
+
+        @media @tablet {
+            margin-left: 28vw;
+        }
+
+        @media @phone {
+            margin-left: 38vw;
+        }
     }
 }
 
@@ -185,7 +398,14 @@ h1 {
     img {
         width: 3%;
         margin: 1%;
+
+        @media @phone {
+            width: 7%;
+            margin: 2%;
+        }
     }
+
+    
 }
 
 .footer {
@@ -194,5 +414,14 @@ h1 {
 
     h6 {
         font-size: 1.4rem;
+
+        @media @tablet {
+            font-size: 1.2rem;
+            margin: 2vh 0;
+        }
+
+        @media @phone {
+            font-size: 1rem;
+        }
     }
 }

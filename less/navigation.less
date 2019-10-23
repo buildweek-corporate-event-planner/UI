@@ -2,11 +2,28 @@
 
 header {
     display: flex;
+
+    @media @tablet {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .logo {
     padding: 0 0 0 1%;
     width: 50%;
+
+    @media @tablet {
+        padding: 5% 0 0 5%;
+        margin-right: 2vw;        
+    }
+
+    @media @phone {
+        img {
+            width: 85%;
+        }
+        
+    }
 }
 
 nav {
@@ -16,6 +33,10 @@ nav {
     justify-content: flex-end;
     align-items: center;
 
+    @media @phone {
+        width: 40%;
+    }
+
     button {
         padding: 0.35vh 1vw;
         margin: 1%; 
@@ -24,6 +45,14 @@ nav {
         border-radius: 16px; 
         border: none;
         font-size: 1.25rem;
+
+        @media @tablet {
+            width: 30%;
+        }
+
+        @media @phone {
+            width: 50%;
+        }
     }
 
     .btn-one {
