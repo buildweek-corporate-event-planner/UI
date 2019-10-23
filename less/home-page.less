@@ -309,6 +309,14 @@ h1 {
     background-color: @bg;
     display: flex;
 
+        @media @tablet {
+            height: 20vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 7vh 0 10vh 0;
+        }
+
         @media @phone {
             height: 15vh;
             flex-direction: column;
@@ -316,7 +324,20 @@ h1 {
             align-items: center;
             margin-bottom: 10vh;
         }
+     
+    form{
+        @media @tablet {
+            width: 55vw;
+            display: flex;
+            justify-content: center;
+        }
+    }    
     input {
+        @media @tablet {
+            padding: 2% 0;
+            border:none;
+            width: 40vw; 
+        }
         @media @phone {
             padding: 2% 0;
             border:none;
@@ -324,6 +345,14 @@ h1 {
     }
     
     button {
+        @media @tablet {
+            border-radius: 16px;
+            border: none;
+            padding: 2% 0;
+            width: 20vw;
+            color: @bg;
+            background-color: @text;
+        }
         @media @phone {
             border-radius: 16px;
             border: none;
@@ -335,10 +364,14 @@ h1 {
     }
 
     h3 {
+        @media @tablet {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+        }
         @media @phone {
             text-transform: uppercase;
             font-size: 1.4rem;
-            margin-bottom: 1vh;
+            margin-bottom: 2vh;
         }
 
     }
