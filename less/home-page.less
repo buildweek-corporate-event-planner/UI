@@ -101,13 +101,13 @@ h1 {
     }
 }
 
-.cta-box1 {
+.cta-box1, .cta-box2 {
     background-color: @bg;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 23vh;
 
         @media @tablet {
             height: 18vh;
@@ -122,7 +122,7 @@ h1 {
 
     h3 {
         justify-content: center;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         padding: 0.25% 0;
         margin: 0.75vh 0 1.5vh 0; 
 
@@ -147,7 +147,7 @@ h1 {
         @media @phone {
             justify-content: center;
             margin-left: 4vw;
-            width: 80%;
+            // width: 80%;
         }
 
         form {
@@ -162,24 +162,29 @@ h1 {
             @media @phone {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                // justify-content: center;
                 width: 90%;
-                margin-left: 11vw;
+                // margin-left: 11vw;
+                align-items: center;
             }
             
             input {
-                width: 50%;
-                padding: 1.5%;
-                border: none;
+                width: 62%;
+                padding: 2.5%;
+                border: 0.25px solid rgb(231, 229, 229);
+                border-radius: 16px;
+                font-size: 1.25rem;
 
                 @media @tablet {
                     width: 45%;
-                    margin-left: 4vw;
+                    margin-left: 7vw;
+                    font-size: 1rem;
                 }
 
                 @media @phone {
                     width: 68%;
-                    margin-left: 5vw;
+                    // margin-left: 5vw;
+                    text-align: center;
                 }
             }
         }
@@ -191,22 +196,30 @@ h1 {
             color: @bg;
             padding: 0.75vh 0.5vw;
             margin: 1%; 
-            width: 45%;
+            width: 33%;
             height: 70%; 
             border-radius: 16px; 
             border: none;
             font-size: 1.5rem;
 
             @media @tablet {
-                padding: 0.5vh 0.25vw;
-                width: 40%;
+                border-radius: 16px;
+                border: none;
+                padding: 2% 0;
+                width: 20vw;
+                
             }
-
             @media @phone {
-                width: 50%;
-                margin-left: 9vw;
-                padding: 2%;
-                font-size: 1.25rem;
+                border-radius: 16px;
+                border: none;
+                padding: 2% 0;
+                width: 30vw;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-top: 1vh;
+
             }
         }
     }
@@ -226,11 +239,29 @@ h1 {
     }
 }
 
+.cta-box2 {
+    margin-bottom: 13vh;
+
+    @media @phone {
+        margin: 4vh 0 8vh 0; 
+    }
+
+    #btn2 {
+        color: @bg;
+        background-color: @text;
+    }
+
+    h3 {
+        padding: 0 10vw;
+    }
+}
+
 .features-text {
     text-align: center;
-    padding-top: 3vh;
+    padding: 2vh;
     font-size: 1.8rem;
     background-color: @bg;
+    margin: 10vh;
 
     @media @tablet {
         padding: 0.25vh 0;
@@ -243,8 +274,8 @@ h1 {
 
     @media @phone {
         font-size: 1.2rem;
-        padding-top: 0;
-        margin-top: 7vh;
+        padding: 1.5vh;
+        margin: 0;
     }
 }
 
@@ -296,7 +327,7 @@ h1 {
 
         @media @phone {
             width: 100%;
-            padding-bottom: 10vh;
+            padding-bottom: 8vh;
         }
     }
 
@@ -305,84 +336,12 @@ h1 {
     }
 }
 
-.cta-box2 {
-    background-color: @bg;
-    display: flex;
-
-        @media @tablet {
-            height: 20vh;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 7vh 0 10vh 0;
-        }
-
-        @media @phone {
-            height: 15vh;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10vh;
-        }
-     
-    form{
-        @media @tablet {
-            width: 55vw;
-            display: flex;
-            justify-content: center;
-        }
-    }    
-    input {
-        @media @tablet {
-            padding: 2% 0;
-            border:none;
-            width: 40vw; 
-        }
-        @media @phone {
-            padding: 2% 0;
-            border:none;
-        }
-    }
-    
-    button {
-        @media @tablet {
-            border-radius: 16px;
-            border: none;
-            padding: 2% 0;
-            width: 20vw;
-            color: @bg;
-            background-color: @text;
-        }
-        @media @phone {
-            border-radius: 16px;
-            border: none;
-            padding: 2% 0;
-            width: 20vw;
-            color: @bg;
-            background-color: @text;
-        }
-    }
-
-    h3 {
-        @media @tablet {
-            text-transform: uppercase;
-            font-size: 1.8rem;
-        }
-        @media @phone {
-            text-transform: uppercase;
-            font-size: 1.4rem;
-            margin-bottom: 2vh;
-        }
-
-    }
-}
-
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5vh 0 8vh 0;
+    margin: 5vh 0 6vh 0;
 
     @media @tablet {
         margin-bottom: 3vh;
@@ -391,10 +350,11 @@ h1 {
     .contact-text {
         color: @secondary;
         background-color: @bg;
+        margin: 2vh 0;
         
         h3 {
             margin: 0;
-            font-size: 2.4rem;
+            font-size: 3rem;
 
             @media @tablet {
                 font-size: 2rem;;
@@ -408,7 +368,8 @@ h1 {
 
     h5 {
         font-size: 1.8rem;
-        margin: 1vh;
+        margin: 1vh 0 2vh 0;
+        text-align: center;
 
         @media @tablet {
             font-size: 1.4rem;
@@ -426,7 +387,7 @@ h1 {
     justify-content: center;
     align-content: center;
     background-color: @bg;
-    width: 45%;
+    width: 50%;
     padding: 2vh;
 
         @media @tablet {
@@ -452,7 +413,8 @@ h1 {
         padding: 1.5%;
         margin: 0.75% 0;
         border: 0.25px solid rgb(231, 229, 229);
-
+        border-radius: 16px;
+        font-size: 1.25rem;
     }
 
     button {
@@ -462,15 +424,15 @@ h1 {
         border: none;
         padding: 0.75vh 0.5vw;
         color: @bg;
-        font-size: 1.25rem;
-        margin: 0 0 0 21vw;
+        font-size: 1.5rem;
+        margin: 1vh 0 0 22.5vw;
 
         @media @tablet {
             margin-left: 28vw;
         }
 
         @media @phone {
-            margin-left: 38vw;
+            margin-left: 35vw;
         }
     }
 }
