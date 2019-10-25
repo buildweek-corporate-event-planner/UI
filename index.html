@@ -19,8 +19,8 @@
                 <img src="img/logo.png">
             </div>
             <nav>
-                <button class="btn-one">SIGN UP</button>
-                <button class="btn-two">LOG IN</button>
+                <button onclick="location.href='https://ivory.now.sh/register'" class="btn-one">SIGN UP</button>
+                <button onclick="location.href='https://ivory.now.sh/login'" class="btn-two">LOG IN</button>
             </nav>
         </header>    
 
@@ -51,7 +51,7 @@
             <div class="cta">
                 <form action="#">
                     <input type="email" placeholder="Enter your business email" username="email">
-                    <button type="submit">Start for free</button>
+                    <button type="submit" onclick="location.href='https://ivory.now.sh/register'">Start for free</button>
                 </form>
             </div>
         </div>
@@ -94,7 +94,7 @@
                 <div class="cta">
                     <form action="#">
                         <input type="email" placeholder="Enter your business email" username="email">
-                        <button id="btn2" type="submit">SIGN UP</button>
+                        <button type="submit" onclick="location.href='https://ivory.now.sh/register'">SIGN UP</button>
                     </form>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             </div>
             <h5>Have a question or comment? Send us a message.</h5>
             <div class="contact-box">
-                <form action="#">
+                <form action="/thank-you.html" method="get">
                     <input type="text" placeholder="Name" name="name">
                     <input type="text" placeholder="Company" name="company">
                     <input type="textarea" placeholder="Message" name="message">
@@ -127,7 +127,8 @@
          <!------ FOOTER ------>
 
          <div class="footer">
-         <h6>© Copyright 2019. Ivory App.  All Rights Reserved.</h6></div>
+            <a href="/about.html">ABOUT US</a>
+            <h6>© Copyright 2019. Ivory App.  All Rights Reserved.</h6></div>
 
 
     </div>
