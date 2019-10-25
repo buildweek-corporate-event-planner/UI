@@ -729,3 +729,10 @@ h1 {
     margin: 2%;
   }
 }
+h2 {
+  font-size: 2.4rem;
+  color: #F29429;
+}
+h3 {
+  font-size: 2rem;
+}
