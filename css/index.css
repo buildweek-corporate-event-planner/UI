@@ -88,6 +88,11 @@ nav button {
   border-radius: 16px;
   border: none;
   font-size: 1.25rem;
+  cursor: grab;
+}
+nav button:hover {
+  background-color: #323336;
+  color: #F5F6F7;
 }
 @media only screen and (min-width: 501px) and (max-width: 1024px) {
   nav button {
@@ -106,6 +111,40 @@ nav .btn-one {
 }
 nav .btn-two {
   background-color: #3CC1FC;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+.footer a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #3CC1FC;
+  text-align: center;
+  margin: 5vh 0 1vh 0;
+  cursor: grab;
+}
+.footer a:hover {
+  background-color: #323336;
+  color: #F5F6F7;
+}
+.footer h6 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  .footer h6 {
+    font-size: 1.2rem;
+    margin: 2vh 0;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+  .footer h6 {
+    font-size: 1rem;
+  }
 }
 h1 {
   font-size: 3.6rem;
@@ -576,24 +615,6 @@ h1 {
     margin: 2%;
   }
 }
-.footer {
-  display: flex;
-  justify-content: center;
-}
-.footer h6 {
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  .footer h6 {
-    font-size: 1.2rem;
-    margin: 2vh 0;
-  }
-}
-@media only screen and (min-width: 350px) and (max-width: 500px) {
-  .footer h6 {
-    font-size: 1rem;
-  }
-}
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -706,24 +727,5 @@ h1 {
   .icons img {
     width: 5%;
     margin: 2%;
-  }
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-left: 5vw;
-}
-.footer h6 {
-  font-size: 1.4rem;
-}
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
-  .footer h6 {
-    font-size: 1.2rem;
-    margin: 2vh 0;
-  }
-}
-@media only screen and (min-width: 350px) and (max-width: 500px) {
-  .footer h6 {
-    font-size: 0.8rem;
   }
 }
